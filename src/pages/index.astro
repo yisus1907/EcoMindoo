@@ -702,23 +702,19 @@ import "../styles/style.css";
 
         // FORMULARIO
 
-        const form =
-            document.getElementById("reservationForm");
+       const form = document.getElementById("reservationForm") as HTMLFormElement | null;
 
+form?.addEventListener("submit", (event) => {
 
-        form?.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-            event.preventDefault();
+    alert(
+        "¡Gracias! Hemos recibido tu solicitud de reserva."
+    );
 
+    form.reset();
 
-            alert(
-                "¡Gracias! Hemos recibido tu solicitud de reserva."
-            );
-
-
-            form.reset();
-
-        });
+});
 
     </script>
 
