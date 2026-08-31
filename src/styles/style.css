@@ -1,0 +1,814 @@
+:root {
+    --verde-bosque: #285943;
+    --verde-menta: #8fc9a3;
+    --amarillo-tucan: #f2c94c;
+    --marron-tierra: #8b5e3c;
+    --azul-agua: #55afc1;
+    --crema: #f8f3e7;
+
+    --blanco: #ffffff;
+    --texto: #26382e;
+    --gris: #68736c;
+
+    --sombra: 0 8px 25px rgba(40, 89, 67, 0.12);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--texto);
+    background: var(--crema);
+    line-height: 1.6;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container {
+    width: min(90%, 1200px);
+    margin: auto;
+}
+
+
+.section {
+    padding: 80px 0;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: var(--crema);
+
+    box-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.navbar {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo img {
+    width: 180px;
+}
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    list-style: none;
+}
+
+
+.nav-menu a {
+    font-weight: 600;
+}
+
+
+.nav-menu a:hover {
+    color: var(--verde-bosque);
+}
+
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+    border: none;
+
+    font-size: 28px;
+
+    color: var(--verde-bosque);
+
+    cursor: pointer;
+}
+
+
+/* ================= BOTÓN ================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    background: var(--verde-bosque);
+
+    color: var(--blanco);
+
+    border-radius: 8px;
+
+    border: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background: var(--amarillo-tucan);
+
+    color: var(--texto);
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 650px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(40, 89, 67, 0.55),
+            rgba(40, 89, 67, 0.55)
+        ),
+        url("/img/hero.png")
+        center / cover
+        no-repeat;
+
+    color: var(--blanco);
+
+    overflow: hidden;
+}
+
+
+/* LOGO HORIZONTAL DE FONDO */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 650px;
+    height: 280px;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    background:
+        url("/img/logo_horizontal.png")
+        center / contain
+        no-repeat;
+
+    opacity: 0.15;
+
+    z-index: 1;
+}
+
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(90%, 1200px);
+
+    margin: auto;
+}
+
+
+.hero-content h1 {
+    max-width: 750px;
+
+    font-size: clamp(
+        2.5rem,
+        6vw,
+        4.5rem
+    );
+
+    line-height: 1.1;
+
+    margin: 15px 0 20px;
+}
+
+
+.hero-content p {
+    max-width: 650px;
+
+    font-size: 1.15rem;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-tag {
+    color: var(--amarillo-tucan);
+
+    font-weight: bold;
+}
+
+
+/* ================= TÍTULOS ================= */
+
+.section-title {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin:
+        0 auto 50px;
+}
+
+
+.section-title span {
+    color: var(--marron-tierra);
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+
+.section-title h2 {
+    color: var(--verde-bosque);
+
+    font-size: 2.3rem;
+
+    margin: 8px 0;
+}
+
+
+.section-title p {
+    color: var(--gris);
+}
+
+
+/* ================= NOSOTROS ================= */
+
+.about {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+.about-text p {
+    color: var(--gris);
+
+    margin-bottom: 20px;
+}
+
+
+.stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.stat {
+    padding: 25px 10px;
+
+    text-align: center;
+
+    background: var(--blanco);
+
+    border-radius: 12px;
+
+    box-shadow: var(--sombra);
+
+    border-bottom:
+        4px solid var(--verde-menta);
+}
+
+
+.stat strong {
+    display: block;
+
+    color: var(--verde-bosque);
+
+    font-size: 1.8rem;
+}
+
+
+.stat span {
+    color: var(--gris);
+
+    font-size: 0.9rem;
+}
+
+
+/* ================= TOURS ================= */
+
+.tours {
+    background: #f1ecdf;
+}
+
+
+.tours-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.tour-card {
+    background: var(--blanco);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: var(--sombra);
+
+    transition: 0.3s;
+}
+
+
+.tour-card:hover {
+    transform: translateY(-6px);
+}
+
+
+.tour-card img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+}
+
+
+.tour-info {
+    padding: 22px;
+}
+
+
+.tour-info h3 {
+    color: var(--verde-bosque);
+
+    margin-bottom: 10px;
+}
+
+
+.tour-info p {
+    color: var(--gris);
+
+    font-size: 0.95rem;
+
+    margin-bottom: 18px;
+}
+
+
+.tour-details {
+    display: flex;
+
+    gap: 15px;
+
+    font-size: 0.85rem;
+
+    margin-bottom: 18px;
+}
+
+
+.tour-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.tour-bottom strong {
+    color: var(--marron-tierra);
+
+    font-size: 1.3rem;
+}
+
+
+.tour-bottom small {
+    display: block;
+
+    color: var(--gris);
+
+    font-size: 0.7rem;
+}
+
+
+.tour-bottom a {
+    color: var(--verde-bosque);
+
+    font-weight: bold;
+}
+
+
+/* ================= BENEFICIOS ================= */
+
+.why-us {
+    background: var(--verde-menta);
+}
+
+
+.benefits {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.benefits article {
+    background: var(--crema);
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+}
+
+
+.icon {
+    font-size: 2.5rem;
+
+    margin-bottom: 15px;
+}
+
+
+.benefits h3 {
+    color: var(--verde-bosque);
+
+    margin-bottom: 10px;
+}
+
+
+.benefits p {
+    color: var(--gris);
+}
+
+
+/* ================= TESTIMONIOS ================= */
+
+.testimonials {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.testimonials article {
+    background: var(--blanco);
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+
+    border-left:
+        5px solid var(--amarillo-tucan);
+}
+
+
+.testimonials p {
+    margin-bottom: 18px;
+
+    font-style: italic;
+}
+
+
+.testimonials strong,
+.testimonials span {
+    display: block;
+}
+
+
+.testimonials strong {
+    color: var(--verde-bosque);
+}
+
+
+.testimonials span {
+    color: var(--gris);
+}
+
+
+/* ================= CONTACTO ================= */
+
+.contacto {
+    background: var(--azul-agua);
+}
+
+
+.contact {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+}
+
+
+.contact-info h3 {
+    color: var(--verde-bosque);
+
+    font-size: 1.8rem;
+
+    margin-bottom: 15px;
+}
+
+
+.contact-info p {
+    margin-bottom: 18px;
+}
+
+
+/* ================= FORMULARIO ================= */
+
+#reservationForm {
+    background: var(--crema);
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+}
+
+
+#reservationForm label {
+    display: block;
+
+    color: var(--verde-bosque);
+
+    font-weight: bold;
+
+    margin:
+        0 0 6px;
+}
+
+
+#reservationForm input,
+#reservationForm select,
+#reservationForm textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border:
+        1px solid #d2d9d4;
+
+    border-radius: 7px;
+
+    font-family: inherit;
+
+    background: var(--blanco);
+}
+
+
+#reservationForm textarea {
+    resize: vertical;
+}
+
+
+#reservationForm .btn {
+    width: 100%;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: var(--verde-bosque);
+
+    color: var(--blanco);
+
+    padding: 50px 0 20px;
+
+    text-align: center;
+}
+
+
+.footer img {
+    width: 180px;
+
+    margin:
+        0 auto 15px;
+
+    background: var(--crema);
+
+    padding: 5px;
+
+    border-radius: 5px;
+}
+
+
+.footer p {
+    color: var(--verde-menta);
+
+    margin-bottom: 20px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+
+.footer-links a:hover {
+    color: var(--amarillo-tucan);
+}
+
+
+.copyright {
+    border-top:
+        1px solid rgba(255,255,255,0.15);
+
+    padding-top: 20px;
+
+    font-size: 0.9rem;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .tours-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .benefits {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .about,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ================= MÓVIL ================= */
+
+@media (max-width: 650px) {
+
+    .section {
+        padding: 60px 0;
+    }
+
+
+    .logo img {
+        width: 145px;
+    }
+
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        background: var(--crema);
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+
+    .hero {
+        min-height: 600px;
+    }
+
+
+    .hero::before {
+        width: 90%;
+
+        height: 200px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .stats,
+    .tours-grid,
+    .benefits,
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-links {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+}
+/* ================= REDES SOCIALES ================= */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    color: var(--blanco);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--amarillo-tucan);
+}

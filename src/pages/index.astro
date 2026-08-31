@@ -1,0 +1,726 @@
+---
+import "../styles/style.css";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoMindo Tours</title>
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                <img src="/img/logo_horizontal.png" alt="EcoMindo Tours" />
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <a href="#contacto" class="btn">Reserva ahora</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- PORTADA -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    🌿 Turismo ecológico en Mindo
+                </span>
+
+                <h1>
+                    Vive la magia del bosque nuboso de Mindo
+                </h1>
+
+                <p>
+                    Tours de aventura y naturaleza para quienes buscan
+                    algo más que un viaje: una conexión real con el
+                    Ecuador silvestre.
+                </p>
+
+                <a href="#contacto" class="btn">
+                    Reserva tu aventura
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- NOSOTROS -->
+        <section class="section" id="nosotros">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>Conócenos</span>
+                    <h2>Sobre nosotros</h2>
+                </div>
+
+                <div class="about">
+
+                    <div class="about-text">
+
+                        <p>
+                            EcoMindo Tours nació en 2019 de la mano de una
+                            familia mindense apasionada por su territorio.
+                            Desde entonces, guiamos a viajeros de todo el
+                            mundo por senderos, cascadas y bosques que aún
+                            conservan su equilibrio natural.
+                        </p>
+
+                        <p>
+                            Creemos en un turismo que cuida lo que muestra:
+                            por eso trabajamos junto a la comunidad local,
+                            contamos con guías certificados de la zona y
+                            reinvertimos parte de cada tour en proyectos
+                            de conservación del bosque nuboso.
+                        </p>
+
+                    </div>
+
+                    <div class="stats">
+
+                        <div class="stat">
+                            <strong>+2.500</strong>
+                            <span>viajeros guiados</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>6</strong>
+                            <span>rutas ecológicas</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>100%</strong>
+                            <span>guías locales certificados</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TOURS -->
+        <section class="section tours" id="tours">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>Descubre Mindo</span>
+                    <h2>Nuestros tours</h2>
+                    <p>
+                        Vive experiencias de naturaleza y aventura.
+                    </p>
+                </div>
+
+
+                <div class="tours-grid">
+
+                    <!-- TOUR 1 -->
+                    <article class="tour-card">
+
+                        <img
+                            src="/img/birdwatching.png"
+                            alt="Avistamiento de aves"
+                        />
+
+                        <div class="tour-info">
+
+                            <h3>Avistamiento de Aves</h3>
+
+                            <p>
+                                Recorrido guiado al amanecer por senderos
+                                del bosque nuboso para observar colibríes
+                                y más de 50 especies de aves propias de
+                                Mindo, con binoculares incluidos.
+                            </p>
+
+                            <div class="tour-details">
+                                <span>🕐 3 horas</span>
+                                <span>🟢 Fácil</span>
+                            </div>
+
+                            <div class="tour-bottom">
+                                <strong>$25</strong>
+                                <a href="#contacto">Reservar</a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TOUR 2 -->
+                    <article class="tour-card">
+
+                        <img
+                            src="/img/canopy.png"
+                            alt="Canopy y Tarabita"
+                        />
+
+                        <div class="tour-info">
+
+                            <h3>Canopy y Tarabita</h3>
+
+                            <p>
+                                Diez líneas de cable sobre el dosel del
+                                bosque, con vistas panorámicas de las
+                                montañas de Mindo. Incluye equipo de
+                                seguridad certificado y guía especializado.
+                            </p>
+
+                            <div class="tour-details">
+                                <span>🕐 1.5 horas</span>
+                                <span>🟡 Moderada</span>
+                            </div>
+
+                            <div class="tour-bottom">
+                                <strong>$20</strong>
+                                <a href="#contacto">Reservar</a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TOUR 3 -->
+                    <article class="tour-card">
+
+                        <img
+                            src="/img/waterfall.png"
+                            alt="Cascadas del Nambillo"
+                        />
+
+                        <div class="tour-info">
+
+                            <h3>Cascadas del Nambillo</h3>
+
+                            <p>
+                                Caminata por senderos ecológicos hasta
+                                un conjunto de cascadas con piscinas
+                                naturales, ideal para refrescarse y
+                                disfrutar del sonido del bosque.
+                            </p>
+
+                            <div class="tour-details">
+                                <span>🕐 4 horas</span>
+                                <span>🟡 Moderada</span>
+                            </div>
+
+                            <div class="tour-bottom">
+                                <strong>$18</strong>
+                                <a href="#contacto">Reservar</a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TOUR 4 -->
+                    <article class="tour-card">
+
+                        <img
+                            src="/img/butterfly.png"
+                            alt="Mariposario Comunitario"
+                        />
+
+                        <div class="tour-info">
+
+                            <h3>Mariposario Comunitario</h3>
+
+                            <p>
+                                Visita a un mariposario gestionado por
+                                la comunidad local, con explicación
+                                sobre el ciclo de vida de las mariposas
+                                y proyectos de conservación.
+                            </p>
+
+                            <div class="tour-details">
+                                <span>🕐 1 hora</span>
+                                <span>🟢 Fácil</span>
+                            </div>
+
+                            <div class="tour-bottom">
+                                <strong>$8</strong>
+                                <a href="#contacto">Reservar</a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TOUR 5 -->
+                    <article class="tour-card">
+
+                        <img
+                            src="/img/chocolate.png"
+                            alt="Ruta del Chocolate"
+                        />
+
+                        <div class="tour-info">
+
+                            <h3>Ruta del Chocolate</h3>
+
+                            <p>
+                                Recorrido por una finca cacaotera familiar:
+                                cosecha, fermentación, tostado y degustación
+                                de chocolate artesanal de origen 100%
+                                ecuatoriano.
+                            </p>
+
+                            <div class="tour-details">
+                                <span>🕐 2 horas</span>
+                                <span>🟢 Fácil</span>
+                            </div>
+
+                            <div class="tour-bottom">
+                                <strong>$15</strong>
+                                <a href="#contacto">Reservar</a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- POR QUÉ ELEGIRNOS -->
+        <section class="section why-us">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>Tu mejor experiencia</span>
+                    <h2>¿Por qué elegirnos?</h2>
+                </div>
+
+                <div class="benefits">
+
+                    <article>
+                        <div class="icon">🌿</div>
+
+                        <h3>Guías locales certificados</h3>
+
+                        <p>
+                            Guías locales certificados, con años de
+                            experiencia en el bosque nuboso.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <div class="icon">♻️</div>
+
+                        <h3>Turismo responsable</h3>
+
+                        <p>
+                            Trabajamos con grupos pequeños de máximo
+                            10 personas para reducir el impacto ambiental.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <div class="icon">🛡️</div>
+
+                        <h3>Seguridad</h3>
+
+                        <p>
+                            Utilizamos equipo de seguridad certificado
+                            internacionalmente en las actividades
+                            de aventura.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <div class="icon">🌳</div>
+
+                        <h3>Conservación</h3>
+
+                        <p>
+                            Parte de cada reserva se reinvierte en
+                            proyectos de conservación local.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TESTIMONIOS -->
+        <section class="section" id="testimonios">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>Experiencias</span>
+                    <h2>Lo que dicen nuestros viajeros</h2>
+                </div>
+
+                <div class="testimonials">
+
+                    <article>
+
+                        <p>
+                            “Una experiencia que cambió mi forma de ver
+                            el ecoturismo. Los guías conocen cada rincón
+                            del bosque.”
+                        </p>
+
+                        <strong>Laura M.</strong>
+                        <span>España</span>
+
+                    </article>
+
+
+                    <article>
+
+                        <p>
+                            “El canopy fue increíble y sentí que
+                            estábamos en manos seguras todo el tiempo.”
+                        </p>
+
+                        <strong>Daniel R.</strong>
+                        <span>Ecuador</span>
+
+                    </article>
+
+
+                    <article>
+
+                        <p>
+                            “Me encantó saber que parte de lo que pagamos
+                            apoya la conservación del bosque.”
+                        </p>
+
+                        <strong>Grace K.</strong>
+                        <span>Estados Unidos</span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO / RESERVA -->
+        <section class="section contacto" id="contacto">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>Comienza tu aventura</span>
+                    <h2>Reserva tu experiencia</h2>
+                </div>
+
+
+                <div class="contact">
+
+                    <div class="contact-info">
+
+                        <h3>¿Listo para conocer Mindo?</h3>
+
+                        <p>
+                            Completa el formulario y nos pondremos
+                            en contacto contigo.
+                        </p>
+
+                        <p>
+                            📍 Vía Mindo Km 2, Pichincha, Ecuador
+                        </p>
+
+                        <p>
+                            📱 +593 99 123 4567
+                        </p>
+
+                        <p>
+                            ✉️ reservas@ecomindotours.ec
+                        </p>
+
+                        <p>
+                            🕐 Todos los días, 07h00 – 18h00
+                        </p>
+
+                    </div>
+
+
+                    <form id="reservationForm">
+
+                        <label for="nombre">
+                            Nombre completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            required
+                        />
+
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            required
+                        />
+
+
+                        <label for="telefono">
+                            Teléfono
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefono"
+                            required
+                        />
+
+
+                        <label for="tour">
+                            Tour de interés
+                        </label>
+
+                        <select id="tour" required>
+
+                            <option value="">
+                                Selecciona un tour
+                            </option>
+
+                            <option value="Avistamiento de Aves">
+                                Avistamiento de Aves
+                            </option>
+
+                            <option value="Canopy y Tarabita">
+                                Canopy y Tarabita
+                            </option>
+
+                            <option value="Cascadas del Nambillo">
+                                Cascadas del Nambillo
+                            </option>
+
+                            <option value="Mariposario Comunitario">
+                                Mariposario Comunitario
+                            </option>
+
+                            <option value="Ruta del Chocolate">
+                                Ruta del Chocolate
+                            </option>
+
+                        </select>
+
+
+                        <label for="fecha">
+                            Fecha tentativa
+                        </label>
+
+                        <input
+                            type="date"
+                            id="fecha"
+                            required
+                        />
+
+
+                        <label for="mensaje">
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            rows="4"
+                        ></textarea>
+
+
+                        <button
+                            type="submit"
+                            class="btn"
+                        >
+                            Enviar solicitud de reserva
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <img
+                src="/img/logo_horizontal.png"
+                alt="EcoMindo Tours"
+            />
+
+            <p>
+                Aventura en el corazón del bosque nuboso.
+            </p>
+
+
+            <!-- ENLACES RÁPIDOS -->
+            <div class="footer-links">
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#nosotros">
+                    Nosotros
+                </a>
+
+                <a href="#tours">
+                    Tours
+                </a>
+
+                <a href="#testimonios">
+                    Testimonios
+                </a>
+
+                <a href="#contacto">
+                    Contacto
+                </a>
+
+            </div>
+
+
+            <!-- REDES SOCIALES -->
+            <div class="social-links">
+
+                <a
+                    href="https://www.instagram.com/ecomindotours/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Instagram
+                </a>
+
+                <a
+                    href="https://www.facebook.com/ecomindotours"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Facebook
+                </a>
+
+            </div>
+
+
+            <p class="copyright">
+                © 2026 EcoMindo Tours. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // MENÚ RESPONSIVO
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const navMenu =
+            document.getElementById("navMenu");
+
+
+        menuToggle?.addEventListener("click", () => {
+
+            navMenu?.classList.toggle("active");
+
+        });
+
+
+        // CERRAR MENÚ AL SELECCIONAR UNA SECCIÓN
+
+        const navLinks =
+            document.querySelectorAll(".nav-menu a");
+
+
+        navLinks.forEach((link) => {
+
+            link.addEventListener("click", () => {
+
+                navMenu?.classList.remove("active");
+
+            });
+
+        });
+
+
+        // FORMULARIO
+
+        const form =
+            document.getElementById("reservationForm");
+
+
+        form?.addEventListener("submit", (event) => {
+
+            event.preventDefault();
+
+
+            alert(
+                "¡Gracias! Hemos recibido tu solicitud de reserva."
+            );
+
+
+            form.reset();
+
+        });
+
+    </script>
+
+</body>
+</html>
