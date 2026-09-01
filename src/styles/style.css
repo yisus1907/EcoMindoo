@@ -165,7 +165,7 @@ a {
             rgba(40, 89, 67, 0.55),
             rgba(40, 89, 67, 0.55)
         ),
-        url("/img/hero.png")
+        url("/EcoMindoo/img/hero.png")
         center / cover
         no-repeat;
 
@@ -192,7 +192,7 @@ a {
         translate(-50%, -50%);
 
     background:
-        url("/img/logo_horizontal.png")
+        url("/EcoMindoo/img/logo_horizontal.png")
         center / contain
         no-repeat;
 
